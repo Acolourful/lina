@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>牛丽娜 四川美食</title>
+		<style>	
+			body,html{
+				width:100%;
+                height:100%;
+				background-image:url(res/beijing.jpg);
+				background-size:cover;
+				overflow:hidden;
+                margin:0px;
+                padding: 0px;
+			}	
+		.close_btn{
+			width:0px;
+			height:0px;
+		}
+			#bg{
+      	position:absolute;
+      	top:0px;
+      	left:0px;
+      	background-color:#000000;
+        width:100%;
+      	height:100%;
+      	background-repeat:no-repeat;
+      	background-position:center;
+      	background-size:80% auto;
+      	display:none;
+      }
+        .image_list{
+        text-align:center;
+      	margin-top:10%;
+      }
+      .image_list img{
+      	
+        width:350px;
+        height:350px;
+      	opacity:0.7;
+      }
+      .image_list img:hover{
+      	opacity:1;
+      }
+		</style>
+		<script type="text/javascript">
+      function showImage1(){
+        //背景层图片
+        document.getElementById("bg").style.backgroundImage = "url(res/1.jpg)";
+        //显示黑色背景层
+        document.getElementById("bg").style.display = "block";
+        //显示关闭按扭
+        document.getElementsByClassName("close_btn")[0].style.display = "block";
+      }
+      function showImage2(){
+        //背景层图片
+        document.getElementById("bg").style.backgroundImage = "url(res/2.jpg)";
+        //显示黑色背景层
+        document.getElementById("bg").style.display = "block";
+        //显示关闭按扭
+        document.getElementsByClassName("close_btn")[0].style.display = "block";
+      }
+      function showImage3(){
+        //背景层图片
+        document.getElementById("bg").style.backgroundImage = "url(res/3.jpg)";
+        //显示黑色背景层
+        document.getElementById("bg").style.display = "block";
+        //显示关闭按扭
+        document.getElementsByClassName("close_btn")[0].style.display = "block";
+      }
+      function showImage4(){
+        //背景层图片
+        document.getElementById("bg").style.backgroundImage = "url(res/4.jpg)";
+        //显示黑色背景层
+        document.getElementById("bg").style.display = "block";
+        //显示关闭按扭
+        document.getElementsByClassName("close_btn")[0].style.display = "block";
+      }
+      function closeImage(){
+    	  //隐藏黑色背景
+    	  document.getElementById("bg").style.display = "none";
+    	  //隐藏关闭按扭
+    	  document.getElementsByClassName("close_btn")[0].style.display = "none";
+      }
+    </script>
+		<link rel="stylesheet" href="css/main.css" type="text/css">
+	</head>
+
+	<body>
+		<div class="image_list">
+      <img src="res/1.jpg" title="点击查看大图" onclick="showImage1()" />
+      <img src="res/2.jpg" title="点击查看大图" onclick="showImage2()" />
+      <img src="res/3.jpg" title="点击查看大图" onclick="showImage3()" />
+      <img src="res/4.jpg" title="点击查看大图" onclick="showImage4()" />
+    </div>
+    
+    <img class="close_btn" src="res/关闭.jpeg" title="关闭" onclick="closeImage()" />
+    <div id="bg"></div>
+	</body>
+</html
